@@ -5,11 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
   <title></title>
 </head>
 
 <body>
   
+  <section id="App">
+    <!-- Navbar -->
+    <nav>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- My header -->
+    <header class="row">
+      <div><i class="fa fa-bars"></i></div>
+      <div>Good Afternoon</div>
+       <div><i class="fa fa-moon-o"></i></div>
+    </header>
+    
+    <!-- main section -->
+    <section>
+        <div id="body">
+            
+        </div>
+        <div id="info">
+            <div class="info">
+                Info! If you want to add a new task click the plus sign and then click ADD button
+            </div>
+        </div>
+    </section>
+
+    <!-- Footet -->
+    <footer>
+        <div onclick="goHome()"><i class="fa fa-home"></i></div>
+        <div onclick="showmodal()">
+            <i class="fa fa-plus plus"></i>
+        </div>
+        <div onclick="goInfo()"><i class="fa fa-question"></i></div>
+    </footer>
+  </section>
   
 
   <script src="assets/js/main.js"></script>
