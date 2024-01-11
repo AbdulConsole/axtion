@@ -38,22 +38,22 @@ function putByTime(){
     body.style.backgroundColor = '#001f3f'
   }
 }
-    
-    function OnEmptyElement(){
-        // Check if you have completed all your tasks
-        if (main.childNodes.length < 2){
-            var element = document.createElement('div');
-            element.textContent = 'You do not have any task remaining..'
-            element.setAttribute('class', 'empty')
-            element.setAttribute('id', 'empty')
-            main.appendChild(element)
-        } else {
-            element = document.querySelector('#empty')
-            if (element) {
-                element.remove()
-            }
-        }
+
+function OnEmptyElement(){
+  // Check if you have completed all your tasks
+  if (main.childNodes.length < 2){
+    var element = document.createElement('div');
+    element.textContent = 'You do not have any task remaining..'
+    element.setAttribute('class', 'empty')
+    element.setAttribute('id', 'empty')
+    main.appendChild(element)
+  } else {
+    element = document.querySelector('#empty')
+    if (element) {
+      element.remove()
     }
+  }
+}
     
     
     
