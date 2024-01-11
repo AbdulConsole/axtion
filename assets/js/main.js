@@ -15,30 +15,29 @@ switch_mode.addEventListener('click', darkmode);
 open_modal.addEventListener('click', showmodal);
 
 
+function capitalizeFL(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
-    function capitalizeFL(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-    
-    function putByTime(){
-        // Ghanging color of header and footer by time
-        if (date < 12) {
-            datespan.textContent = 'Morning'
-            header.style.backgroundColor = colors['ALGAL']
-            footer.style.backgroundColor = colors['ALGAL']
-            body.style.backgroundColor = '#001f3f'
-        } else if (date < 19) {
-            datespan.textContent = 'Evening'
-            header.style.backgroundColor = colors['TAXI']
-            footer.style.backgroundColor = colors['TAXI']
-            body.style.backgroundColor = '#001f3f'
-        } else {
-            datespan.textContent = 'Night'
-            header.style.backgroundColor = colors['NAVY']
-            footer.style.backgroundColor = colors['NAVY']
-            body.style.backgroundColor = '#001f3f'
-        }
-    }
+function putByTime(){
+  // Ghanging color of header and footer by time
+  if (date < 12) {
+    datespan.textContent = 'Morning'
+    header.style.backgroundColor = colors['ALGAL']
+    footer.style.backgroundColor = colors['ALGAL']
+    body.style.backgroundColor = '#001f3f'
+  } else if (date < 19) {
+    datespan.textContent = 'Evening'
+    header.style.backgroundColor = colors['TAXI']
+    footer.style.backgroundColor = colors['TAXI']
+    body.style.backgroundColor = '#001f3f'
+  } else {
+    datespan.textContent = 'Night'
+    header.style.backgroundColor = colors['NAVY']
+    footer.style.backgroundColor = colors['NAVY']
+    body.style.backgroundColor = '#001f3f'
+  }
+}
     
     function OnEmptyElement(){
         // Check if you have completed all your tasks
