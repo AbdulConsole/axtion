@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  <title></title>
+    <meta charset="UTF-8">
+    <title>My Axtion</title>
+    <meta name="description" content="Axtion is a simple Todo">
+    <meta name="keywords" content="Todo, Timeline">
+    <meta name="author" content="AbdulConsole">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-  
-  <section id="App">
-    <!-- Navbar -->
+<div id="modal">
+    <div class="modal-content">
+        <form>
+            <input class="u-full-width" id="todoinput" type="text" name="todo">
+            <button data-btn-add class="button">ADD</button>
+        </form>
+    </div>
+</div>
+<section id="App">
     <nav>
-      <div>
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-        </ul>
-      </div>
+        <div id="side-nav">
+            <ul>
+                <li data-home>Home</li>
+                <li data-info>About</li>
+            </ul>
+        </div>
     </nav>
-    
-    <!-- My header -->
+
     <header class="row">
-      <div><i class="fa fa-bars"></i></div>
-      <div>Good Afternoon</div>
-       <div><i class="fa fa-moon-o"></i></div>
+        <div data-menu><i class="fa fa-bars"></i></div>
+        <div>Good <span id="date-of-time"></span> <span id='name'></span></div>
+        <div data-switch-mode><i class="fa fa-moon-o"></i></div>
     </header>
-    
-    <!-- main section -->
+
     <section>
         <div id="body">
             
@@ -42,17 +48,12 @@
         </div>
     </section>
 
-    <!-- Footet -->
     <footer>
-        <div onclick="goHome()"><i class="fa fa-home"></i></div>
-        <div onclick="showmodal()">
-            <i class="fa fa-plus plus"></i>
-        </div>
-        <div onclick="goInfo()"><i class="fa fa-question"></i></div>
+        <div data-home><i class="fa fa-home"></i></div>
+        <div data-modal><i class="fa fa-plus plus"></i></div>
+        <div data-info><i class="fa fa-question"></i></div>
     </footer>
-  </section>
-  
-
-  <script src="assets/js/main.js"></script>
+</section>
+  <<script src="assets/js/main.js"></script>>
 </body>
 </html>
