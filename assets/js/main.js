@@ -141,7 +141,6 @@ function OnEmptyElement(){
         return (!string || /^\s*$/.test(string));
     }
     
-    alert('This App is created By ReDiS. \nIf you like it please don\'t forget to upvote it and leave a comment.\nThe Color of the borers will change depending on the time of the day.')
     name = prompt('Enter your name:')
     namespan = document.querySelector('#name')
     
