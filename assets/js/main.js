@@ -1,9 +1,22 @@
+// Grab DOMs 
+// Btns
 let btn_add = document.querySelector('[data-btn-add]');
 let home = document.querySelector('[data-home]');
 let info = document.querySelector('[data-info]');
 let menu = document.querySelector('[data-menu]');
 let switch_mode = document.querySelector('[data-switch-mode]');
 let open_modal = document.querySelector('[data-modal]');
+// Elements
+body = document.querySelector('body')
+    main = document.querySelector('#body')
+    namespan = document.querySelector('#name')
+    datespan = document.querySelector('#date-of-time')
+    header = document.querySelector('header')
+    footer = document.querySelector('footer')
+    modal = document.querySelector('#modal')
+    info = document.querySelector('#info')
+    nav = document.querySelector('nav')
+
 
 
 
@@ -152,15 +165,7 @@ function OnEmptyElement(){
     }
     date = new Date()
     date = date.getHours()
-    body = document.querySelector('body')
-    main = document.querySelector('#body')
-    namespan = document.querySelector('#name')
-    datespan = document.querySelector('#date-of-time')
-    header = document.querySelector('header')
-    footer = document.querySelector('footer')
-    modal = document.querySelector('#modal')
-    info = document.querySelector('#info')
-    nav = document.querySelector('nav')
+    
     colors = {
         "NAVY" : "#001f3f",
         "LIME" : "#01FF70",
